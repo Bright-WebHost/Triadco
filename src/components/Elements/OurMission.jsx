@@ -1,4 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+var img1 = require('./../../images/left-men.png');
+var img2 = require('./../../images/background/bg-4.png');
+var img3 = require('./../../images/background/bg-site.png');
+var img4 = require('./../../images/allimges/our.jpg');
 
 class OurMission extends React.Component {
     render() {
@@ -35,7 +41,7 @@ class OurMission extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-md-4 col-sm-6">
-                                    <div className="mission-mid bg-no-repeat bg-cover m-b30" style={{ backgroundImage: 'url(' + img4 + ')' }} />
+                                    <div className="mission-mid bg-no-repeat bg-cover m-b30" style={{ backgroundImage: `url(${img4})` }} />
                                 </div>
                                 <div className="col-md-4 col-sm-12">
                                     <div className="contact-home1-left bg-dark p-a30 m-b0">
