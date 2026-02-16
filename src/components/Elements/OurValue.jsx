@@ -1,6 +1,4 @@
 import React from 'react';
-import CountUp from 'react-countup';
-import { NavLink } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 
 var img1 = require('./../../images/video-bg.jpg');

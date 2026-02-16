@@ -1,10 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-
-var img1 = require('./../../images/left-men.png');
-var img2 = require('./../../images/background/bg-4.png');
-var img3 = require('./../../images/background/bg-site.png');
-var img4 = require('./../../images/allimges/our.jpg');
 
 class OurMission extends React.Component {
     render() {

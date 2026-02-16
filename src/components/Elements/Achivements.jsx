@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -11,8 +10,6 @@ const images = [
     require('./../../images/allimges/Achievments page2.webp'),        
  
 ]
-
-var bnr1 = require('./../../images/background/line.png');
 
 class Achievements extends React.Component {
     

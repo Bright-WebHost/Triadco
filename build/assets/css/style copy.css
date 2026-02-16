@@ -1278,7 +1278,7 @@ ol.list-num-count>li:before {
 	width: 28px;
 	height: 28px;
 	line-height: 28px;
-	color: #75BF44 !;
+	color: #fff;
 	background: #1a1a1a;
 	font-weight: 500;
 	text-align: center;
@@ -17184,27 +17184,4 @@ color:#fff;
 }
 
 
-@media (min-width: 1024px) { 
-	#mainid {
-	  display: none !important;
-	  display: block !important;
-	}
-  }
-  @media (min-width: 768 ) { 
-	#mainid {
-	  display: none !important;
-	  display: block !important;
-	}
-  }
-  @media (min-width: 768 ) { 
-	#laptopId {
-	  display: none !important;
-	  display: block !important;
-	}
-  }
-
-
-
 .autor-post-tag-share .widget.widget_tag_cloud{margin-bottom: 20px;}
-
-

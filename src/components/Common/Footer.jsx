@@ -63,16 +63,16 @@ class Footer extends React.Component {
                                         </div>
                                         <p className="max-w400">Triad Co fournit des équipements et des solutions médicales de haute qualité en Côte d'Ivoire, pour divers besoins en matière de soins de santé.</p>
                                         <ul className="social-icons mt-social-links">
-    <li><a href={"https://www.facebook.com/Triadco.ci"} className="fa fa-facebook" /></li>
+    <li><a href={"https://www.facebook.com/Triadco.ci"} className="fa fa-facebook" aria-label="Facebook" /></li>
     {/* <li><NavLink to={"#"} className="fa fa-linkedin" /></li> */}
-    <li><a href={"https://www.instagram.com/triadco_ci/"} className="fa fa-instagram" /></li>
+    <li><a href={"https://www.instagram.com/triadco_ci/"} className="fa fa-instagram" aria-label="Instagram" /></li>
     <li>
-  <a href="https://wa.me/01 60330193" className="fa fa-whatsapp" />
+  <a href="https://wa.me/01 60330193" className="fa fa-whatsapp" aria-label="WhatsApp" />
 </li>
     <li>
-  <a href="mailto:Info@triadci.com" className="fa fa-envelope" />
+  <a href="mailto:Info@triadci.com" className="fa fa-envelope" aria-label="Email" />
 </li>
-<li><a href={"https://www.linkedin.com/company/thetriadco/?originalSubdomain="} className="fa  fa-linkedin" /></li>
+<li><a href={"https://www.linkedin.com/company/thetriadco/?originalSubdomain="} className="fa  fa-linkedin" aria-label="LinkedIn" /></li>
 
 
 </ul>
@@ -127,7 +127,7 @@ class Footer extends React.Component {
                         <div className="container">
                             <div className="row">
                                 <div className="mt-footer-bot-center">
-                                  <a href='http://brightmedia.tech/' target='_blank'> <span className="copyrights-text" > © 2025 Triadco. Designed By </span>  <span className="copyrights-text" style={{color:'white'}}>Bright Media</span></a>
+                                  <a href='http://brightmedia.tech/' target='_blank' rel="noreferrer"> <span className="copyrights-text" > © 2025 Triadco. Designed By </span>  <span className="copyrights-text" style={{color:'white'}}>Bright Media</span></a>
                                 </div>
                             </div>
                         </div>
