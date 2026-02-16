@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Play } from 'lucide-react';
-import demoVideo from "./../../Video/Triadco.mp4";
+import demoVideo from "./../../Video/triadco-video.mp4";
 
 function NewSection() {
   const [open, setOpen] = useState(false);
