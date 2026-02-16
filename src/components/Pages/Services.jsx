@@ -2,14 +2,14 @@ import React from 'react';
 import Header from './../Common/Header';
 import Footer from './../Common/Footer';
 import Banner from './../Elements/Banner';
-import AboutCompany from '../Elements/AboutCompany';
-import Specialization3 from '../Elements/Specialization3';
-import OurServices3 from '../Elements/OurServices3';
-import OurValue3 from '../Elements/OurValue3';
-import OurProject3 from '../Elements/OurProject3';
-import Faq from '../Elements/Faq';
+// import AboutCompany from '../Elements/AboutCompany';
+// import Specialization3 from '../Elements/Specialization3';
+// import OurServices3 from '../Elements/OurServices3';
+// import OurValue3 from '../Elements/OurValue3';
+// import OurProject3 from '../Elements/OurProject3';
+// import Faq from '../Elements/Faq';
 import OurProject2 from '../Elements/OurProject2';
-import OurProject from '../Elements/OurProject';
+// import OurProject from '../Elements/OurProject';
 
 var bnrimg = require('./../../images/allimges/product.webp');
 

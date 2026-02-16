@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+// import { ArrowRight } from 'lucide-react';
 import Footer from '../Common/Footer';
 import Banner from '../Elements/Banner';
 import Header from '../Common/Header';
@@ -52,8 +52,8 @@ var bnrimg = require('./../../images/allimges/About.jpg');
 
 export default function Produits() {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
+  // const [loading, setLoading] = useState(false);
+  // const navigate = useNavigate();
   
 
   useEffect(() => {
@@ -61,13 +61,13 @@ export default function Produits() {
     setProducts(featuredProducts.slice(0, 5));
   }, []);
 
-  if (loading) {
-    return (
-      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f9fafb' }}>
-        <div style={{ fontSize: '1.25rem', color: '#4b5563' }}>Loading...</div>
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f9fafb' }}>
+  //       <div style={{ fontSize: '1.25rem', color: '#4b5563' }}>Loading...</div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <>

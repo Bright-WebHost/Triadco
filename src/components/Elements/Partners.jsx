@@ -1,19 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import ClientsLogo from './ClientsLogo';
 
-const images = [
-    require('./../../images/allimges/about1.webp'),
-    require('./../../images/allimges/about2.webp'),
-    require('./../../images/allimges/about1.webp'),
-    require('./../../images/allimges/about2.webp'),
+// const images = [
+//     require('./../../images/allimges/about1.webp'),
+//     require('./../../images/allimges/about2.webp'),
+//     require('./../../images/allimges/about1.webp'),
+//     require('./../../images/allimges/about2.webp'),
    
-]
+// ]
 
-var bnr1 = require('./../../images/background/line.png');
+// var bnr1 = require('./../../images/background/line.png');
 
 class Partners extends React.Component {
     

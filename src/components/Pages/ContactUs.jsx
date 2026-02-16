@@ -2,21 +2,21 @@ import React from 'react';
 import Header from './../Common/Header';
 import Footer from './../Common/Footer';
 import Banner from './../Elements/Banner';
-import GoogleMapReact from 'google-map-react';
+// import GoogleMapReact from 'google-map-react';
 
 var bnrimg = require('./../../images/allimges/contacts.webp');
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+// const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class ContactUs extends React.Component {
     render() {
-        const defaultProps = {
-            center: {
-              lat: 34.073280,
-              lng: -118.251410
-            },
-            zoom: 12
-        };
+        // const defaultProps = {
+        //     center: {
+        //       lat: 34.073280,
+        //       lng: -118.251410
+        //     },
+        //     zoom: 12
+        // };
         return (
             <>
                 <Header />

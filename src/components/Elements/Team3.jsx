@@ -75,8 +75,8 @@ class Team3 extends React.Component {
                                                 <div className="icons" >
  
  
-                                                 <a href={`tel:${item.call}`} className="fa fa-phone" style={{ marginRight: '10px' }}/>
-                                                <a href={`mailto:${item.email}`} className="fa fa-envelope" />
+                                                 {/* <a href={`tel:${item.call}`} className="fa fa-phone" style={{ marginRight: '10px' }}/>
+                                                <a href={`mailto:${item.email}`} className="fa fa-envelope" /> */}
                                                     {/* <NavLink to={"#"} ><i className="fa fa-facebook" /></NavLink>
                                                     <NavLink to={"#"} > <i className="fa fa-twitter" /></NavLink>
                                                     <NavLink to={"#"} > <i className="fa fa-instagram" /></NavLink>

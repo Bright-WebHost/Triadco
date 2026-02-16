@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
-var img1 = require('./../../images/video-bg.jpg');
+// var img1 = require('./../../images/video-bg.jpg');
 
 class OurValue extends React.Component {
     componentDidMount() {

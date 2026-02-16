@@ -3,10 +3,10 @@ import Header from './../Common/Header';
 import Footer from './../Common/Footer';
 import Banner from './../Elements/Banner';
 import About4 from './../Elements/About4';
-import Specialization4 from './../Elements/Specialization4';
+// import Specialization4 from './../Elements/Specialization4';
 import Team3 from './../Elements/Team3';
-import AboutSummary from './../Elements/AboutSummary';
-import Faq from '../Elements/Faq';
+// import AboutSummary from './../Elements/AboutSummary';
+// import Faq from '../Elements/Faq';
 import Tabs from './Tabs';
 import Partners from '../Elements/Partners';
 

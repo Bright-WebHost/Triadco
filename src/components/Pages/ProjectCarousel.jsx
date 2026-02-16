@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import Header from './../Common/Header';
-import Footer from './../Common/Footer';
-import Banner from './../Elements/Banner';
+// import Header from './../Common/Header';
+// import Footer from './../Common/Footer';
+// import Banner from './../Elements/Banner';
 
 var bnrimg = require('./../../images/banner/3.jpg');
 
