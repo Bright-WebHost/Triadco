@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Play } from 'lucide-react';
+import demoVideo from "./../../Video/Triadco.mp4";
 
 function NewSection() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <style>{`
@@ -184,6 +186,43 @@ function NewSection() {
         .bg-blue-50 {
           background-color: #EFF6FF;
         }
+          .video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.video-wrapper {
+  width: 80%;
+  max-width: full;
+}
+
+.video-wrapper video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Close button OUTSIDE video */
+.close-btn {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: red;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
       `}</style>
 
       <div className="main-container">
@@ -197,7 +236,7 @@ function NewSection() {
             <div className="services-grid">
               <div className="service-card">
                 <img
-                  src="https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src={require('./../../images/img/150.webp')}
                   alt="Salles de bloc opératoire"
                   className="service-image"
                 />
@@ -208,7 +247,7 @@ function NewSection() {
 
               <div className="service-card">
                 <img
-                  src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src={require('./../../images/img/151.webp')}
                   alt="Salles de réanimation"
                   className="service-image"
                 />
@@ -219,7 +258,7 @@ function NewSection() {
 
               <div className="service-card">
                 <img
-                  src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src={require('./../../images/img/152.webp')}
                   alt="Salles d'accouchement"
                   className="service-image"
                 />
@@ -230,7 +269,7 @@ function NewSection() {
             </div>
 
             <div className="button-center">
-              <button className="primary-button site-button btn-effect">
+              <button onClick={() => window.location.href = '/produits'} className="primary-button site-button btn-effect">
                 Tous nos services
               </button>
             </div>
@@ -244,17 +283,49 @@ function NewSection() {
             </h2>
 
             <div className="project-container">
-              <img
-                src="https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Bloc opératoire"
-                className="project-image"
-              />
-              <div className="play-button-container">
-                <button className="play-button ">
-                  <Play className="play-icon" />
-                </button>
-              </div>
-            </div>
+        <img
+          src={require("./../../images/img/153.webp")}
+          alt="Bloc opératoire"
+          className="project-image"
+        />
+
+        <div className="play-button-container">
+          <button
+            className="play-button"
+            onClick={() => setOpen(true)}
+          >
+            <Play className="play-icon" />
+          </button>
+        </div>
+      </div>
+
+      {open && (
+        <div
+          className="video-modal"
+          onClick={() => setOpen(false)} // click backdrop closes
+        >
+          {/* Close button OUTSIDE video */}
+          <button
+            className="close-btn"
+            onClick={(e) => {
+              e.stopPropagation();
+              setOpen(false);
+            }}
+          >
+            ✕
+          </button>
+
+          {/* Video wrapper */}
+          <div
+            className="video-wrapper"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <video controls autoPlay>
+              <source src={demoVideo} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      )}
           </div>
         </section>
 

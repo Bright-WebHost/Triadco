@@ -11,43 +11,53 @@ function Categories() {
             <h1 style={styles.title}>
               Nos catégories de produits
             </h1>
-            <button className='site-button btn-effect' style={styles.button}>
+            <button onClick={() => window.location.href = '/produits'} className='site-button btn-effect' style={styles.button}>
               Consulter la boutique
             </button>
           </div>
-          <CategoryCard
-            title="Equipements médicaux"
-            bgColor="#F7FBF2"
-            hoverBgColor="#00CC1D"
-            icon={<Stethoscope style={styles.iconGray} />}
-          />
-          <CategoryCard
-            title="Mobiliers hospitaliers"
-            bgColor="#fce7f3"
-            hoverBgColor="#d81b99"
-            icon={<BedDouble style={styles.iconPink} />}
-          />
+          <a href="/produits/equipements-medicaux" style={styles.link}>
+            <CategoryCard
+              title="Equipements médicaux"
+              bgColor="#F7FBF2"
+              hoverBgColor="#00CC1D"
+              icon={<Stethoscope style={styles.iconGray} />}
+            />
+          </a>
+          <a href="/produits/mobiliers-hospitaliers" style={styles.link}>
+            <CategoryCard
+              title="Mobiliers hospitaliers"
+              bgColor="#fce7f3"
+              hoverBgColor="#d81b99"
+              icon={<BedDouble style={styles.iconPink} />}
+            />
+          </a>
         </div>
 
         <div style={styles.gridBottom}>
-          <CategoryCard
-            title="Instruments et boîtes"
-            bgColor="#FDF0F3"
-            hoverBgColor="#DB0632"
-            icon={<Package style={styles.iconAmber} />}
-          />
-          <CategoryCard
-            title="Consommables médicaux"
-            bgColor="#eff6ff"
-            hoverBgColor="#3b82f6"
-            icon={<Syringe style={styles.iconBlue} />}
-          />
-          <CategoryCard
-            title="Produits paramédicaux"
-            bgColor="#fef3c7"
-            hoverBgColor="#d4b839"
-            icon={<Thermometer style={styles.iconTeal} />}
-          />
+          <a href="/produits/instruments-et-boites" style={styles.link}>
+            <CategoryCard
+              title="Instruments et boîtes"
+              bgColor="#FDF0F3"
+              hoverBgColor="#DB0632"
+              icon={<Package style={styles.iconAmber} />}
+            />
+          </a>
+          <a href="/produits/consommables-medicaux" style={styles.link}>
+            <CategoryCard
+              title="Consommables médicaux"
+              bgColor="#eff6ff"
+              hoverBgColor="#3b82f6"
+              icon={<Syringe style={styles.iconBlue} />}
+            />
+          </a>
+          <a href="/produits/produits-paramedicaux" style={styles.link}>
+            <CategoryCard
+              title="Produits paramédicaux"
+              bgColor="#fef3c7"
+              hoverBgColor="#d4b839"
+              icon={<Thermometer style={styles.iconTeal} />}
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -124,10 +134,13 @@ const styles = {
     paddingRight: '3rem',
     paddingTop: '1.75rem',
     paddingBottom: '1.75rem',
-    // borderRadius: '0.375rem',
     border: 'none',
     cursor: 'pointer',
     transition: 'background-color 0.2s ease',
+  },
+  link: {
+    textDecoration: 'none',
+    display: 'block',
   },
   gridTop: {
     display: 'grid',
@@ -149,6 +162,8 @@ const styles = {
     cursor: 'pointer',
     minHeight: '150px',
     transition: 'all 0.3s ease',
+    width: '100%',
+    boxSizing: 'border-box',
   },
   cardTitle: {
     fontSize: '2rem',
@@ -216,6 +231,10 @@ const css = `
 
   button:hover {
     background-color: #000000 !important;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   div[style*="borderRadius"] {
