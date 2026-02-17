@@ -223,6 +223,7 @@ const styles = `
     font-size: 24px;
     font-weight: 700;
     color: #1f2937;
+    line-height: 0.1;
   }
 
   .card-items {
